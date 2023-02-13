@@ -24,9 +24,7 @@
 
 
 <div class="pon">
-  <div>
-    <JankenList on:kimeru={(e) => handleKimeru(e.detail)} />
-  </div>
+  <JankenList on:kimeru={(e) => handleKimeru(e.detail)} />
   <div
     class="pon__btn"
   >
@@ -36,9 +34,6 @@
     >
       ぽん！
     </button>
-    {#if pon && pon.label}
-      <p>{pon.label}</p> 
-    {/if}
   </div>
 </div>
 
@@ -48,6 +43,7 @@
   }
 
   .pon__btn {
+    margin-left: 1rem;
     margin-top: 50px;
   }
 </style>
