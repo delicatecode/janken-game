@@ -11,7 +11,7 @@ export default defineConfig({
   build: {
     manifest: true,
     rollupOptions: {
-      input: '/src/main.ts',
+      input: ['index.html', '/src/main.ts'],
       output: {
         manualChunks: undefined
       }

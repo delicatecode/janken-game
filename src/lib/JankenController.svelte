@@ -1,13 +1,11 @@
 <script lang="ts">
   /* svelte */
-  import { createEventDispatcher } from "svelte";
-
   /* app */
   import JankenPon from "./JankenPon.svelte";
   import JankenPlayers from "./JankenPlayers.svelte";
   import { Choki, Gu, Janken, Pa } from "../constants/janken";
   import type { Pon, PonResult } from "../types";
-    import { Shohai } from "../constants/shohai";
+  import { Shohai } from "../constants/shohai";
 
 
   let Jankens = [
