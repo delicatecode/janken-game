@@ -42,19 +42,31 @@
 <section>
   <JankenPon on:pon={e => handlePon(e.detail)} />
 </section>
-<section>
+<section
+  class="result__section"
+>
+  <div class="result">
+    {#if shohai && shohai.value}
+      <h2>{shohai.label}</h2>
+    {/if}
+  </div>
+</section>
+<section class="players">
   <JankenPlayers cpuPon={cpuPon} youPon={youPon} />
 </section>
-<div class="result">
-  {#if shohai && shohai.value}
-    <h2>{shohai.label}</h2>
-  {/if}
-</div>
 
 
 <style>
   .result {
-    margin-top: -200px;
-    margin-left: 13%;
+    /* margin-top: -200px;
+    margin-left: 13%; */
+    position: static;
+    width: 500px;
+    justify-items: center;
+    margin: 0 45%;
+  }
+  .players {
+    position: static;
+    margin: 70px auto;
   }
 </style>

@@ -16,11 +16,11 @@
 
 <style>
   .card {
-    padding: 0.5em 1em;
-    margin: 2em 0;
+    padding: 0.3em;
+    margin: 1em;
     font-weight: bold;
     min-width: 200px;
-    min-height: 350px;
+    min-height: 200px;
     color: #fff;
     background: #FFF;
     border: solid 3px;
@@ -32,6 +32,7 @@
   }
 
   .card img {
+    size: 30%;
     max-width: 150px;
     max-height: 285px;
   }
